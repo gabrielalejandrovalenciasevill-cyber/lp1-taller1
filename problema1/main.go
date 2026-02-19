@@ -26,8 +26,8 @@ func main() {
 	var wg sync.WaitGroup
 
 	//  cambiar estos parámetros y observar el intercalado de salidas
-	// numGoroutines := 4
-	// veces := 1
+	numGoroutines := 4
+	veces := 1
 
 	//  lanzar varias goroutines, sumar al WG y esperar con wg.Wait()
 	for id := 1; id <= numGoroutines; id++ {
